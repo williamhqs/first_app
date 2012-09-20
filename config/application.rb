@@ -2,12 +2,18 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+<<<<<<< HEAD
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
   Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
 end
+=======
+# If you have a Gemfile, require the gems listed there, including any gems
+# you've limited to :test, :development, or :production.
+Bundler.require(:default, Rails.env) if defined?(Bundler)
+>>>>>>> 5caeb4b31d4d9d46fbd6c59c8499fdc8cca72bfd
 
 module FirstApp
   class Application < Rails::Application
@@ -33,11 +39,18 @@ module FirstApp
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+<<<<<<< HEAD
+=======
+    # JavaScript files you want as :defaults (application.js is always included).
+    # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+
+>>>>>>> 5caeb4b31d4d9d46fbd6c59c8499fdc8cca72bfd
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+<<<<<<< HEAD
 
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
@@ -58,5 +71,7 @@ module FirstApp
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+=======
+>>>>>>> 5caeb4b31d4d9d46fbd6c59c8499fdc8cca72bfd
   end
 end

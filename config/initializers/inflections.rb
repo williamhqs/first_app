@@ -8,8 +8,11 @@
 #   inflect.irregular 'person', 'people'
 #   inflect.uncountable %w( fish sheep )
 # end
+<<<<<<< HEAD
 #
 # These inflection rules are supported but not enabled by default:
 # ActiveSupport::Inflector.inflections do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+=======
+>>>>>>> 5caeb4b31d4d9d46fbd6c59c8499fdc8cca72bfd
